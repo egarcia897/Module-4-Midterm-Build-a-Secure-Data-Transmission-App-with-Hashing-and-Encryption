@@ -49,18 +49,22 @@ Confidentiality is implemented through:
 •	AES symmetric encryption protects data from unauthorized access.
 •	Role-based access control (admin only features)
 •	Caesar cipher as a basic demonstration
+
 Integrity is maintained through:
 •	SHA-256 hashing verifies data has not been altered.
 •	Hash comparison before and after encryption.
 •	Digital signature verification (admin mode)
+
 Availability is ensured through:
 •	System provides reliable authentication and encryption services
 •	Role-based access ensures authorized users can access features
+
 Entropy & Key Generation Explanation
 Entropy refers to randomness collected for cryptographic use. High entropy prevents guessing attacks, hash prediction, and key duplication making cryptographic operations significantly more secure.
 •	Secrets.token_hex() generates unpredictable salts
 •	Fernet (AES) generates secure random encryption keys
-Sample Output as the Standard User: 
+
+SAMPLE OUTPUT AS THE STANDARD USER: 
 Enter username: Andrew
 Enter Password: user245
 Welcome Andrew! Role: user
